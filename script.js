@@ -101,8 +101,7 @@ $(document).ready(function(){
     /* 
         Obsługa magicline w menu głównym.
     */
-    addOrRemoveMagicLineAndShowOrHideMenu();
-    setMagicLine();
+
     
     /* 
         Klikając dokument zamknij burger menu
@@ -250,4 +249,10 @@ $(document).ready(function(){
         $('#playlist').css('height', $('#video').height());
     }
     }
+
+    $(window).load(function(){
+    setMagicLine();
+    addOrRemoveMagicLineAndShowOrHideMenu();
 });
+});
+

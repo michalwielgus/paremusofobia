@@ -6,10 +6,6 @@
 	  
 	
     <link rel="stylesheet" href="style.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Dosis&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="keywords" content="recenzje płyt, aktualności muzyczne, niezależny serwis muzyczny" />
@@ -438,7 +434,7 @@
             </div>
              <div class="footer-podpunkty">
                 <h2>MOTTO</h2>
-                <p>&quot;Paremusofobia - <br>przesłuchyjemy wszystkie, <br>bez względu na wiek!&quot;</p>
+                <p>&quot;Paremusofobia - <br>przesłuchujemy wszystkie, <br>bez względu na wiek!&quot;</p>
             </div>
             <div class="footer-podpunkty">
             <h2>FACEBOOK</h2>
@@ -459,10 +455,17 @@
         }
         $('ul.sb-slider li').css('height', wysokosc);   
         $('section#slider').css("height", wysokosc);
-        $('#preloader').delay(2000).fadeOut('slow',function(){$(this).remove();});
+        $(window).load(function(){$('#preloader').fadeOut('slow',function(){$(this).remove();});});
     </script>
          <script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
           <script src="script.min.js"></script>
-
+          <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+          <script>
+        WebFont.load({
+            google: {
+            families: ['Oswald:400,300:latin-ext', 'Titillium+Web:400,700:latin-ext', 'Dosis:latin-ext', 'Montserrat:700:latin-ext']
+            }
+        });
+    </script>
 </body>
 </html>
